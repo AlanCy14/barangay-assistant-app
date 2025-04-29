@@ -1,26 +1,96 @@
-@import "tailwindcss";
+@import "tailwindcss/preflight";
+@tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* Additional custom styles if needed */
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  @apply bg-[#f8f3e6] text-[#1f2937]; /* <-- text-gray-800 = #1f2937 */
 }
+
+input, button {
+  @apply focus:outline-none focus:ring-2 focus:ring-[#0a3a67];
+}
+
+/* Optional: Better text smoothing */
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* General page styling */
+body {
+  background-color: #f8f3e6;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 380px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #0a3a67;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: #0a3a67;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+}
+
+input:focus {
+  border-color: #1e5b94;
+  outline: none;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #1e5b94;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0a3a67;
+}
+
+.footer {
+  margin-top: 15px;
+  font-size: 0.9rem;
+}
+
+.footer a {
+  color: #1e5b94;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
