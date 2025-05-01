@@ -1,5 +1,8 @@
-@import "tailwindcss/preflight";
+@tailwind base;
+@tailwind components;
 @tailwind utilities;
+
+/* You can add your own global styles below these lines */
 
 /* Additional custom styles if needed */
 body {
@@ -92,5 +95,24 @@ button:hover {
 
 .footer a:hover {
   text-decoration: underline;
+}
+
+/* Ensure profile image is circular and maintains its aspect ratio */
+.profile-image {
+  width: 100px;   /* Adjust width */
+  height: 100px;  /* Adjust height */
+  border-radius: 50%; /* Circle the image */
+  object-fit: cover; /* Maintain aspect ratio and fill the circle */
+  border: 3px solid #4c9df9; /* Optional: border around the image */
+  margin-bottom: 16px; /* Space below the image */
+}
+
+/* Adjust other profile card section for better spacing */
+.profile-card {
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
