@@ -1,0 +1,78 @@
+/* app/HomePage.module.css */
+
+.container {
+  max-width: 1200px; /* Limit content width */
+  margin: 0 auto; /* Center the content on the page */
+  padding: 0 1rem; /* Add some padding on the sides */
+}
+
+.header {
+  padding: 1rem 0;
+  border-bottom: 1px solid #eaeaea;
+  margin-bottom: 2rem;
+}
+
+.nav a {
+  margin-right: 1.5rem;
+  font-size: 1.1rem;
+  color: #555; /* Slightly lighter nav link color */
+}
+
+.nav a:last-child {
+  margin-right: 0;
+}
+
+.nav a:hover {
+  color: #0070f3; /* Link color on hover */
+}
+
+.main {
+  padding: 2rem 0;
+}
+
+.welcomeHeading {
+  font-size: 2.5rem; /* Make main heading bigger */
+  margin-bottom: 0.5rem;
+  color: #111; /* Darker heading color */
+}
+
+.welcomeMessage {
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+  color: #555;
+}
+
+.section {
+  background-color: #ffffff; /* White background for sections */
+  padding: 1.5rem;
+  border-radius: 8px; /* Rounded corners */
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.section h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #eaeaea;
+  padding-bottom: 0.5rem;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.quickLinksList {
+  list-style: none; /* Remove default bullet points */
+  padding: 0;
+}
+
+.quickLinksList li {
+  margin-bottom: 0.5rem;
+}
+
+.footer {
+  padding: 2rem 0;
+  border-top: 1px solid #eaeaea;
+  margin-top: 2rem;
+  text-align: center;
+  color: #888; /* Lighter text for footer */
+  font-size: 0.9rem;
+}
